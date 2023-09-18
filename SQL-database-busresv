@@ -1,0 +1,14 @@
+CREATE DATABASE busresv;
+use busresv;
+CREATE TABLE bus(
+id INT PRIMARY KEY,
+ac BOOLEAN,
+capacity INT
+); 
+
+CREATE TABLE booking(
+passenger_name varchar(50),
+bus_no INT,
+travel_date date
+);
+INSERT INTO bus VALUES(1,1,2),(2,1,5),(3,0,4);
